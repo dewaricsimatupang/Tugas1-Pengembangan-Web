@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="page18.css">
+        <style>
+            .container {
+  display: -webkit-flex;
+  display: flex;
+  border: solid red 4px;
+}
+nav {
+  width: 200px;
+  border: solid yellow 4px;
+}
+.flex-column {
+  -webkit-flex: 1;
+          flex: 1;
+border: solid green 4px;
+}
+section {
+  border: solid purple 4px;
+}
+.initial {
+  -webkit-flex: initial;
+          flex: initial;
+  width: 200px;
+  min-width: 100px;
+  border: solid yellow 4px;
+}
+.none {
+  -webkit-flex: none;
+          flex: none;
+  width: 200px;
+  border: solid yellow 4px;
+}
+.flex1 {
+  -webkit-flex: 1;
+          flex: 1;
+          border: solid yellow 4px;
+}
+.flex2 {
+  -webkit-flex: 2;
+          flex: 2;
+          border: solid yellow 4px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Selection</li>
+                    <li>Menu</li>
+                    <li>Suggestions</li>
+                </ul>
+            </nav>
+            <div class="flex-column">
+                <section>
+                    Ini memakai flexbox, makanya jadi seperti ini. Flexbox is so easy
+                </section>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                </section>
+            </div>
+        </div>
+        <p>
+            <div class="container">
+                <div class="initial">
+                    Ini inisial, dia 200px kalau normal tapi bisa turun ke 100px, tapi tidak bisa lebih kecil dari itu. I will be 200px when there is room, and I will shrink down to 100px if there is not room, but no smaller.
+                </div>
+                <div class="none">
+                    Kalau ini none, dia akan terus 200px. I will always be 200px, no matter what.
+                </div>
+                <div class="flex1">
+                    Yang ini flex1, dia mengisi 1/3 width yang tersisa. I will fill up 1/3 of the remaining width.
+                </div>
+                <div class="flex2">
+                    Yang ini flex2, dia mengisi 2/3 width yang tersisa. I will fill up 2/3 of the remaining width
+                </div>
+            </div>
+            </div>
+        </p>
+    </body>
+</html>
