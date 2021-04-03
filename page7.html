@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="page7.css">
+        <style>
+            .static {
+  position: static;
+  border: solid orange 4px;
+}
+.relative1 {
+  position: relative;
+  border: solid blue 4px;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+  border: solid purple 4px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: white;
+  border: solid green 4px;
+}
+.relative {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border: solid yellow 4px;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  border: solid red 4px;
+}
+        </style>
+    </head>
+    <body>
+        <p>
+            <div class="static">
+                Ini pakai div class static. Static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.
+            </div>
+        </p>
+        <p>
+            <div class="relative1">
+                Kalau ini pakai div class relative1. Relative behaves the same as static unless you add some extra properties.
+            </div>
+        </p>
+        <p>
+            <div class="relative2">
+                Yang ini pakai div class relative2. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+            </div>
+        </p>
+        <p>
+            <div class="fixed">
+                Ini pakai div class fixed, jadi dia gak akan kemana-mana. A fixed element does not leave a gap in the page where it would normally have been located.
+            </div>
+        </p>
+        <p>
+            <div class="relative">
+                Kalau yang ini pakai div class relative. This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.
+            </div>
+        </p>
+        <p>
+            <div class="absolute">
+                Ini pakai div class absolute. This element is absolutely-positioned. It's positioned relative to its parent.
+            </div>
+        </p>
+    </body>
+</html>
