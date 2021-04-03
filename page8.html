@@ -1,0 +1,59 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="page8.css">
+        <style>
+            .container {
+  position: relative;
+  border: solid blue 4px;
+}
+
+nav {
+  position: absolute;
+  left: 0px;
+  width: 192px;
+  border: solid orange 4px;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+  border: solid green 4px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+  border: solid red 4px;
+}
+body {
+  margin-bottom: 120px;
+  }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+            <nav>
+              <ul>
+                <li>Home</li>
+                <li>Selection</li>
+                <li>Menu</li>
+                <li>Suggestions</li>
+            </ul>
+            </nav>
+            <section>
+                Ini pakai margin left, jadi ada ruang buat nav. The margin-left style for sections makes sure there is room for the nav. Otherwise the absolute and static elements would overlap
+            </section>
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </section>
+            <section>
+                Coba resize browsernya, nanti dia pasti menyesuaikan. Notice what happens when you resize your browser. It works nicely!
+            </section>
+            <footer>
+                Ini adalah fixed footer (pakai margin-bottom di bodynya). If you use a fixed header or footer, make sure there is room for it! I put a margin-bottom on the body.
+            </footer>
+            </div>
+    </body>
+</html>
